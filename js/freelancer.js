@@ -35,3 +35,25 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+
+
+
+
+//added by rui
+
+
+
+    $(document).ready(function() {
+     
+
+            /* card flip */
+        $(".flip").hover(function(){
+          $(this).find(".card").toggleClass("flipped");
+          return false;
+        });
+
+
+
+    });
+

@@ -22,18 +22,22 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    /*color: #18bc9c;*/
+    color:white;
 }
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    color:black;
+}
+h3{
+    color:white;
 }
 
 hr.star-light,
@@ -63,7 +67,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    /*background-color: #18bc9c;*/
 }
 
 hr.star-primary {
@@ -82,7 +86,8 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    /*background: #18bc9c;*/
+    background:black;
 }
 
 header .container {
@@ -132,7 +137,7 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
+        font-size: 1.5em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -168,6 +173,9 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+    background-color: rgba(0,0,0, 0.5);
+    /*opacity: 0.5;*/
+    /*z-index: 1;*/
 }
 
 section {
@@ -181,7 +189,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    /*background: #18bc9c;*/
 }
 
 section.success a,
@@ -274,7 +282,8 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    /*color: #18bc9c;*/
+    color:white;
     background: #fff;
 }
 
@@ -327,7 +336,8 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    /*color: #18bc9c;*/
+    color:red;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -457,3 +467,134 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+
+/*added by rui*/
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective:1000;
+    /*border: 1px solid silver;*/
+    
+}
+    /* flip the pane when hovered */
+    .flip-container:hover .card,    .flip-container.hover .card{
+        transform: rotateY(180deg);
+    }
+
+.flip-container, .face {
+    /*width: 200px;*/
+    /*width:262.5px;*/
+    width: 200px;
+    height: 180px;
+    border-radius: 5px;
+
+}
+
+.flip-container img{
+    width:198px;
+    height:178px;
+}
+
+
+/* flipper speed goes here */
+.card {
+    transition: 0.3s;
+    transform-style: preserve-3d;
+}
+
+/* hide back of pane during swap */
+.front, .back{
+    backface-visibility:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/* front page, place above back */
+.front {
+    z-index;2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+
+
+
+/* back , initially hidden pane */
+.back{
+    padding-top: 10px;
+    transform: rotateY(180deg);
+    text-align: center;
+    background-color: black;
+    opacity:0.6;
+
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color:white;
+}
+
+button{
+    background-color: black;
+    color:white;
+   
+}
+.btn{
+    background-color: gray;
+    border:none;
+}
+.btn:hover{
+    background-color: silver;
+}
+.btn-success:active{
+    background-color: red;
+}
+
+
+.btn-success:focus{
+    background-color: gray;
+}
+
+.btn-success:hover{
+    background-color: silver;
+    border-color:none;
+}
+.btn-success:active{
+    background-color: red;
+}
+
+#profile-img{
+    width: 200px;
+    height:200px;
+}
+
+.title{
+    margin-bottom: 30px;
+}
+
+.title.about{
+    color:white;
+}
+
+#about{
+    background-color: black;
+}
+hr.small{
+    width:200px;
+}
+
+.btn-submit{
+    text-align: center;
+}
+
+
+footer .footer-above{
+    background-color: rgba(0,0,0,0.85);
+}
+footer .footer-below{
+    background-color: black;
+}
+
+/*added */
+
