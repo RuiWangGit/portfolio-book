@@ -20,6 +20,8 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+
+            console.log(0);
             $.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
@@ -32,6 +34,7 @@ $(function() {
                 cache: false,
                 success: function() {
                     // Enable button & show success message
+                    console.log(1);
                     $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -46,6 +49,7 @@ $(function() {
                 },
                 error: function() {
                     // Fail message
+                    console.log("2");
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");

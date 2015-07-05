@@ -527,7 +527,7 @@ footer .footer-below {
     transform: rotateY(180deg);
     text-align: center;
     background-color: black;
-    opacity:0.6;
+    opacity:0.8;
 
 }
 
@@ -595,6 +595,27 @@ footer .footer-above{
 footer .footer-below{
     background-color: black;
 }
+.project-name {
+    
+    font-weight: bold;
+}
+
+.project-des{
+    font-size: 15px;
+
+}
 
 /*added */
+
+.modal-content{
+    background-color: rgba(0,0,0,0.6);
+    /*opacity: 0.6;*/
+}
+
+.portfolio-modal .modal-content h2, p{
+    color:white;
+}
+ul.social-buttons li{
+   color:white;
+}
 
