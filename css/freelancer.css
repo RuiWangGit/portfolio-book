@@ -618,4 +618,10 @@ footer .footer-below{
 ul.social-buttons li{
    color:white;
 }
+ul.social-buttons li:hover{
+   background-color:silver;
+}
+.fa:hover{
+    background-color: silver;
+}
 
