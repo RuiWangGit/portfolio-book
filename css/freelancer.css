@@ -469,6 +469,9 @@ footer .footer-below {
 }
 
 
+
+
+
 /*added by rui*/
 
 /* entire container, keeps perspective */
@@ -534,6 +537,8 @@ footer .footer-below {
 .back{
     padding-top: 10px;
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
     text-align: center;
     background-color: black;
     opacity:0.8;
