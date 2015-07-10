@@ -480,6 +480,8 @@ footer .footer-below {
     /* flip the pane when hovered */
     .flip-container:hover .card,    .flip-container.hover .card{
         transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
     }
 
 .flip-container, .face {
@@ -500,12 +502,16 @@ footer .footer-below {
 /* flipper speed goes here */
 .card {
     transition: 0.3s;
+     -webkit-transition:0.3s;
+     -moz-transition:0.3s;
     transform-style: preserve-3d;
 }
 
 /* hide back of pane during swap */
 .front, .back{
     backface-visibility:hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     position:absolute;
     top:0;
     left:0;
@@ -516,6 +522,9 @@ footer .footer-below {
     z-index;2;
     /* for firefox 31 */
     transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+
 }
 
 
